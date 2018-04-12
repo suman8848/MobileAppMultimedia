@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <TextView
+            android:id="@+id/startDurationTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="00:00"
+            android:textColor="#FFF"
+            android:textSize="12dp" />
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="90"
+            android:padding="5dp"
+            android:progressDrawable="@drawable/seekbar" />
+
+        <TextView
+            android:id="@+id/totalDurationTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="00:00"
+            android:textColor="#FFF"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ee"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:weightSum="5">
+
+        <ImageButton
+            android:id="@+id/shuffleBttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_effect"
+            android:src="@drawable/ic_action_shuffle" />
+
+        <ImageButton
+            android:id="@+id/imageViewPrevious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_effect"
+            android:clickable="true"
+            android:src="@drawable/ic_action_skipprevious" />
+
+        <ImageButton
+            android:id="@+id/imageViewPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_effect"
+            android:clickable="true"
+            android:src="@drawable/ic_action_play" />
+
+        <ImageButton
+            android:id="@+id/imageViewNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_effect"
+            android:clickable="true"
+            android:src="@drawable/ic_action_skipnext" />
+
+        <ImageButton
+            android:id="@+id/loopBttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_effect"
+            android:src="@drawable/ic_action_loop" />
+
+    </LinearLayout>
+
+</RelativeLayout>

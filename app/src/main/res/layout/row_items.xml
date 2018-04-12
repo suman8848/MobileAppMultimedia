@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        card_view:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_action_music"
+            card_view:ignore="ContentDescription,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/tv_artistname"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/thumbnail"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:text="No Title"
+            android:textStyle="bold"
+            android:lines="1"
+            card_view:ignore="HardcodedText,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/tv_songsName"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/thumbnail"
+            android:layout_toEndOf="@+id/thumbnail"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:paddingBottom="5dp"
+            android:text="No Songs"
+            android:textSize="12sp"
+            android:lines="1"
+            card_view:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:clickable="true"--><!--android:layout_marginTop="2dp"--><!--android:layout_marginLeft="2dp"--><!--android:background="?attr/selectableItemBackground">-->
+
+    <!--<ImageView--><!--android:id="@+id/img_songs"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:src="@drawable/ic_music_icon2"--><!--android:padding="10dp"--><!--android:layout_alignParentLeft="true"--><!--android:layout_alignParentTop="true"--><!--android:layout_marginRight="16dp" />-->
+
+
+    <!--<TextView--><!--android:id="@+id/tv_artistname"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:textSize="12sp"--><!--android:text="Artist"--><!--android:layout_alignBottom="@+id/img_songs"--><!--android:layout_toRightOf="@+id/img_songs"--><!--android:layout_toEndOf="@+id/img_songs"--><!--android:layout_marginBottom="10dp" />-->
+
+    <!--<TextView--><!--android:id="@+id/tv_songsName"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:text="Songs Title"--><!--android:textSize="14sp"--><!--android:textStyle="bold"--><!--android:layout_above="@+id/tv_artistname"--><!--android:layout_toRightOf="@+id/img_songs"--><!--android:layout_toEndOf="@+id/img_songs" />--><!--</RelativeLayout>-->
+

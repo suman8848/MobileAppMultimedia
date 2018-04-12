@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="68dp"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/albumImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/oldeis" />
+
+    <ImageButton
+        android:id="@+id/playPauseBttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/albumImg"
+        android:layout_marginEnd="11dp"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_marginRight="11dp"
+        android:src="@drawable/ic_action_play"
+        android:layout_alignBottom="@+id/albumImg" />
+
+
+    <TextView
+        android:id="@+id/tv_songsName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Songs Title"
+        android:layout_marginTop="16px"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/albumImg"
+        android:layout_toRightOf="@+id/albumImg"
+        android:layout_toEndOf="@+id/albumImg" />
+
+    <TextView
+        android:id="@+id/artistsong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Artist name"
+        android:textSize="12sp"
+        android:layout_below="@+id/tv_songsName"
+        android:layout_toRightOf="@+id/albumImg"
+        android:layout_toEndOf="@+id/albumImg" />
+
+</RelativeLayout>
